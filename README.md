@@ -1,4 +1,4 @@
-# 🔥 Charizard Screen Companion
+#  Charizard Screen Companion
 
 > An interactive, floating, animated desktop pet that visually understands your screen on-demand and answers questions, debugs errors, or summarizes content using Google Gemini Multimodal Vision without manual screenshots.
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
 - **Draggable Animated Desktop Pet**: Seamlessly looping 240-frame Chibi Charizard (`charizard_idle.webp` with `charizard_idle.gif` fallback) floating on your desktop with smooth bilinear filtering, transparent background, and border snapping.
 - **Glassmorphic HUD Card**: Dark translucent speech bubble (`rgba(22, 18, 16, 0.94)`) with ember accents (`#ff5500`), clean typography, and embedded markdown browser.
@@ -24,10 +24,10 @@
 - **Asynchronous Multimodal Vision**: Powered by `google-genai` with an automatic model fallback cascade (`gemini-3-flash-preview`, `gemini-3.8-flash`, `gemini-flash-latest`, `gemini-3.1-flash-lite`) running on a background `QThread` to maintain a silky 60 FPS GUI.
 - **Memory Optimized**: Employs on-demand frame streaming (`QMovie.CacheMode.CacheNone`), keeping the entire application's footprint under ~45 MB of RAM.
 - **Quick Action Buttons**:
-  - 📄 **Summarize Screen**: Extracts the key visual and textual takeaways in 3 concise bullet points.
-  - 🐛 **Debug & Fix Errors**: Detects visible code bugs, syntax errors, and stack traces with instant fixes.
-  - 💡 **Explain Concept/Diagram**: Explains flowcharts, architectures, papers, or dense documents.
-  - 🔥 **Ask Charizard**: Custom question input field with Enter/Send support.
+  -  **Summarize Screen**: Extracts the key visual and textual takeaways in 3 concise bullet points.
+  -  **Debug & Fix Errors**: Detects visible code bugs, syntax errors, and stack traces with instant fixes.
+  -  **Explain Concept/Diagram**: Explains flowcharts, architectures, papers, or dense documents.
+  -  **Ask Charizard**: Custom question input field with Enter/Send support.
 
 ---
 
@@ -53,7 +53,7 @@ orb-desktop-agent/
 
 ---
 
-## 🚀 Quick Start Guide
+##  Quick Start Guide
 
 ### 1. Clone the Repository & Install Dependencies
 
@@ -78,7 +78,7 @@ pip install -r requirements.txt
    ```ini
    GEMINI_API_KEY=AIzaSyYourActualKeyHere
    ```
-   > 💡 You can get a free Gemini API key at [Google AI Studio](https://aistudio.google.com/).
+   >  You can get a free Gemini API key at [Google AI Studio](https://aistudio.google.com/).
 
 ### 3. Launch the Companion
 
@@ -88,7 +88,7 @@ python main.py
 
 ---
 
-## 🎮 Controls & Interactions
+##  Controls & Interactions
 
 | Action | Control |
 |---|---|
@@ -102,7 +102,7 @@ python main.py
 
 ---
 
-## 🛡️ Privacy & Security Architecture
+##  Privacy & Security Architecture
 
 1. **Zero Disk Storage**: Screen captures are processed entirely inside volatile RAM (`io.BytesIO`) using `PIL.Image` and streamed directly to Gemini as in-memory byte parts.
 2. **Foreground Safety Guard**: Before any capture occurs, the active foreground window title is checked against a blacklist:
@@ -114,7 +114,7 @@ python main.py
 
 ---
 
-## 🛠️ Fallback Protection
+##  Fallback Protection
 
 - If `charizard_idle.webp` is absent or fails decoding, the app automatically falls back to `charizard_idle.gif`.
 - If both animation assets are missing, the companion falls back to an amber-glowing emoji mascot (`🔥🦎`) with drop-shadow effects, guaranteeing that the application never crashes on launch.

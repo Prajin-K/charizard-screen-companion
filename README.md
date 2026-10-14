@@ -31,7 +31,7 @@
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 orb-desktop-agent/
@@ -95,9 +95,9 @@ python main.py
 | **Drag Mascot** | Click and hold Charizard with the **Left Mouse Button** to move him across your desktop. |
 | **Snap to Edge** | Release Charizard within 30px of any screen boundary to automatically snap to the edge. |
 | **Toggle HUD** | Left-click Charizard to expand or collapse the attached glassmorphic AI card. |
-| **Context Menu** | **Right-click Charizard** to access `🔄 Restart Companion` or `❌ Quit`. |
-| **Crop Active App** | Toggle the `🪟 App` / `🖥️ Full` pill in the HUD header to switch between capturing only the focused app or your entire display. |
-| **Copy Response** | Click the `📋 Copy` button to copy the AI's markdown response to your clipboard. |
+| **Context Menu** | **Right-click Charizard** to access ` Restart Companion` or ` Quit`. |
+| **Crop Active App** | Toggle the ` App` / ` Full` pill in the HUD header to switch between capturing only the focused app or your entire display. |
+| **Copy Response** | Click the ` Copy` button to copy the AI's markdown response to your clipboard. |
 | **Close / Retract** | Click the `✕` button on the top-right of the HUD to collapse it back into the pet. |
 
 ---
@@ -121,6 +121,6 @@ python main.py
 
 ---
 
-## 📜 License
+##  License
 
 MIT License. Feel free to use, modify, and build upon this project.

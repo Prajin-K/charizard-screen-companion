@@ -273,6 +273,7 @@ class CompanionWidget(QWidget):
             if os.path.exists(candidate):
                 movie = QMovie(candidate)
                 if movie.isValid():
+                    self.movie = movie
                     # Low-Memory Streaming Mode: avoids caching 240 uncompressed frames in RAM (~45MB footprint)
                     self.movie.setCacheMode(QMovie.CacheMode.CacheNone)
                     # Smooth display scaling

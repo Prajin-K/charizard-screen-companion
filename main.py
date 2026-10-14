@@ -24,15 +24,15 @@ def main():
     # 2. Load environment variables from .env
     load_dotenv()
 
-    # 3. Create Qt Application instance
-    app = QApplication(sys.argv)
-
-    # 4. Windows High-DPI Pass-Through Rounding Policy
+    # 3. Windows High-DPI Pass-Through Rounding Policy (must be set before QApplication)
     # Prevents Windows OS display scaling (125%/150%) from stretching and blurring the canvas
     if hasattr(Qt.HighDpiScaleFactorRoundingPolicy, "PassThrough"):
         QApplication.setHighDpiScaleFactorRoundingPolicy(
             Qt.HighDpiScaleFactorRoundingPolicy.PassThrough
         )
+
+    # 4. Create Qt Application instance
+    app = QApplication(sys.argv)
 
     app.setApplicationName("Charizard Screen Companion")
     app.setApplicationDisplayName("Charizard Screen Companion")
